@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/freebirdjs/freebird-rpc/issues"
   },
-  "homepage": "https://github.com/freebirdjs/freebird-rpc#readme"
+  "homepage": "https://github.com/freebirdjs/freebird-rpc#readme",
+  "dependencies": {
+    "freebird-transport": "^0.3.0"
+  }
 }
