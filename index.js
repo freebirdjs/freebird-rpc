@@ -1,10 +1,11 @@
-var Transport = require('freebird-transport');
-var transp = new Transport();
-
-// transp._send = function (msg, callback) {};
-// transp.receive(msg);
+var WsServer = require('./lib/server'),
+    WsClient = require('./lib/client');
 
 module.exports = {
-    createServer: function () {},
-    createClient: function () {}
+    createServer: function (server) {
+        return (new WsServer(server))._transp;
+    },
+    createClient: function () {
+        return (new WsClient());
+    }
 };

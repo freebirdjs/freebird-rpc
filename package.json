@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/freebirdjs/freebird-rpc#readme",
   "dependencies": {
-    "freebird-transport": "^0.3.0"
+    "busyman": "^0.3.0",
+    "freebird-transport": "^0.3.0",
+    "websocket": "^1.0.24",
+    "ws": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
   }
 }
