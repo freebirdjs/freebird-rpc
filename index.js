@@ -1,11 +1,11 @@
-var WsServer = require('./lib/server'),
-    WsClient = require('./lib/client');
+var Server = require('./lib/server'),
+    Client = require('./lib/client');
 
 module.exports = {
-    createServer: function (server) {
-        return (new WsServer(server))._transp;
+    createServer: function (httpServer) {
+        return (new Server(httpServer))._transp;
     },
-    createClient: function () {
-        return (new WsClient());
+    createClient: function (addr, options) {
+        return (new Client(addr, options));
     }
 };
