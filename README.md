@@ -17,7 +17,7 @@ Please visit the [Wiki](https://github.com/freebirdjs/freebird-rpc/wiki).
 
 ## Overview  
 
-This module is a transportation with WebSocket protocol, which is used to be RPC interface of freebird framework. It provide methods to create RPC client and RPC server for real-time remote communication. RPC server can be registered to freebird framework, so it can transmit the message of freebird to RPC client. And the RPC client is provide for front-end webapp developers, giva a chance to them to communicate with freebird.  
+This module is a transportation with WebSocket protocol, which is used by the RPC interface of freebird framework. It provides methods to create RPC client and RPC server for real-time remote communications. The RPC server should be registered to freebird framework to be able to transmit freebird messages to RPC client (e.g., the web browser). And the RPC client is provided for webapp to be able to communicate with freebird.  
 
 See [Overview](https://github.com/freebirdjs/freebird-rpc/wiki#Overview) on the Wiki for details. 
 
