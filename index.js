@@ -5,7 +5,7 @@ module.exports = {
     createServer: function (httpServer) {
         return (new Server(httpServer))._transp;
     },
-    createClient: function (addr, options) {
-        return (new Client(addr, options));
+    createClient: function (addr, options, nativeWs) {
+        return (new Client(addr, options, nativeWs));
     }
 };
