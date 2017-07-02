@@ -118,7 +118,7 @@ describe('Functional Check', function () {
         client1.send('net', 'getAllDevIds', {}, function () {});
         transp.on('message', function (msg) {
             msg.data = JSON.parse(msg.data);
-            
+
             if (_.isEqual(msg, receiveMsg))
                 done();
         });
